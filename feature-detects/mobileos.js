@@ -25,7 +25,7 @@ define(['Modernizr'], function(Modernizr) {
     try {
       var mobileos = {};
 
-      if (platform in navigator) {
+      if ('platform' in navigator) {
         mobileos.ios = /iPad|iPhone|iPod/i.test(navigator.platform) && !window.MSStream;
         mobileos.android = /Android/i.test(navigator.platform);
 
